@@ -506,7 +506,7 @@ img {
 p,
 ul,
 img {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 1.4;
     margin: 0 0 14px
@@ -551,12 +551,12 @@ img {
 .site-header .brand {
     margin: 0;
     z-index: 50;
-    max-height: 40px;
-    max-width: 120px;
+    max-height: none;
+    max-width: none;
     position: relative;
     padding: 0;
     padding-left: 0;
-    padding-top: 14px;
+    padding-top: 25px;
     display: block;
     border: none;
     background-color: transparent
@@ -567,16 +567,14 @@ img {
 }
 
 .site-header .brand img {
-    width: 72px;
+    width: 140px;
     margin-top: 0;
     transition: width .4s ease, opacity .3s ease, visibility .4s .2s ease;
     opacity: 1;
     visibility: visible;
 
     display: block;
-    position: absolute;
-    top: 20px;
-    left: 0;
+    position: relative;
     max-height: none
 }
 
@@ -735,7 +733,7 @@ img {
     .navbar .brand img {
         opacity: 1;
         visibility: visible;
-        width: 72px
+        width: 140px
     }
 
     .btn-menu {
@@ -811,7 +809,7 @@ img {
 
 .footer {
     padding: 20px 0;
-    background-color: #292F4B;
+    background-color: #222;
     font-size: 14px;
     color: #FFFFFE
 }
@@ -1020,14 +1018,15 @@ section * {
 }
 
 .hero h1 {
-    color: #292F4B;
-    font-size: 34px;
+    color: #222;
+    font-size: 44px;
     /*text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);*/
     line-height: 1;
     letter-spacing: 0;
     max-width: 100%;
     text-transform: none;
-    z-index: 25
+    z-index: 25;
+    margin-bottom: 8px;
 }
 
 .hero h1.white {
@@ -1035,10 +1034,12 @@ section * {
 }
 
 .hero .hero-text {
-    color: #292F4B;
+    color: #222;
     padding: 0;
     height: auto;
-    margin-bottom: 15%
+    margin-bottom: 15%;
+    max-width: 22ch;
+    font-size: 18px;
 }
 
 .hero .hero-text.white {
@@ -1140,7 +1141,9 @@ section * {
     }
 
     .hero .hero-content {
-        padding-bottom: 4vh
+        padding-bottom: 10vh;
+        padding-top: 28vh;
+        justify-content: flex-start;
     }
 
     .hero h1 {
@@ -1162,11 +1165,13 @@ section * {
     }
 
     .hero .hero-content {
-        padding-bottom: 4vh
+        padding-bottom: 10vh;
+        padding-top: 28vh;
+        justify-content: flex-start;
     }
 
     .hero h1 {
-        font-size: 80px
+        font-size: 60px
     }
 }
 
@@ -1177,7 +1182,9 @@ section * {
     }
 
     .hero .hero-content {
-        padding-bottom: 10vh
+        padding-bottom: 20vh;
+        padding-top: 28vh;
+        justify-content: flex-start;
     }
 }
 
@@ -1192,15 +1199,15 @@ a.btn {
     background: #3C4B4E;
     box-shadow: none;
     border: none;
-    border-radius: 5px;
+    border-radius: 1px;
     color: #FFFFFE;
-    text-align: center;
-    padding: 10px 15px;
-    min-width: 220px;
+    text-align: left;
+    padding: 6px 15px;
+    min-width: 180px;
     max-width: 100%;
     display: inline-block;
     text-shadow: none;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 800;
     text-transform: none;
     text-decoration: none;
@@ -1221,12 +1228,10 @@ a.btn:focus {
 
 .btn.btn-primary,
 a.btn.btn-primary {
-    background: #9355A2;
-    background: linear-gradient(27deg, #292F4B 20%, #9355A2 100%);
+    background: #222;
     color: #FFFFFE;
     border: none;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-    transition: background .4s ease-in-out
+    box-shadow: none;
 }
 
 .btn.btn-primary:active,
@@ -1235,8 +1240,7 @@ a.btn.btn-primary:active,
 a.btn.btn-primary:hover,
 .btn.btn-primary:focus,
 a.btn.btn-primary:focus {
-    background: #683874;
-    background: linear-gradient(27deg, #683874 20%, #9355A2 100%);
+    background: #0e7ac0;
     color: #FFFFFE;
     text-decoration: underline
 }
@@ -1256,7 +1260,7 @@ ol {
 }
 
 .home {
-    background: #E5F5F4
+    background: #ffffff;
 }
 
 .home .btn-menu .lines-circle span.line-1,
