@@ -454,13 +454,13 @@ body {
 
 @media (min-height:768px) {
     body {
-        font-size: 20px
+        font-size: 18px
     }
 }
 
 a {
     color: #000000;
-    font-size: 20px;
+    font-size: inherit;
     transition: color .4s ease, background-color .3s ease;
     border-bottom: none;
     padding-bottom: 3px;
@@ -1274,6 +1274,37 @@ ol {
     background: radial-gradient(circle, #466972 0, #214046 80%);
     background: white;
     color: #FFFFFE
+}
+.home .hero small {
+    color: #d80737;
+}
+
+
+// OTHER PAGES
+.page .hero {
+    height: auto;
+}
+.page .hero .row, 
+.page .hero .row>div {
+    height:  auto;
+}
+.page .hero .hero-content {
+    max-height: 100%;
+    height:  auto;
+}
+.page .page-content {
+    color: #222;
+}
+.page .page-content a {
+    color: #138e89;
+}
+.page .page-content img {
+    border:  1px solid grey;
+    margin: 20px 0;
+}
+.page .page-content ol li {
+    text-indent:  2px;
+    margin-top:  10px;
 }
 
 @supports not (aspect-ratio: auto) {}
