@@ -182,6 +182,7 @@ ul,
 ol {
     margin-top: 0;
     margin-bottom: 10px
+    text-indent:  0;
 }
 
 .list-unstyled {
@@ -1256,7 +1257,6 @@ a.btn.btn-primary:focus {
 ul,
 ol {
     padding-left: 20px;
-    text-indent: 10px
 }
 
 .home {
